@@ -8,35 +8,96 @@
 	<body>
     <!-- header/nav with image below the section -->
     <section class="header">
+
       <h1> Kevin Johnson </h1>
       <p class="dev">Software Developer</p>
+
       </section>
+      <div class="wrapper">
+        <div class="flex-group">
+        <div class="flex-item">
       <div class="image"><img src="./images/kev.jpg" alt="Kevin Johnson picture" width="500" height="600"></div>
+      </div>
       <!-- Introductory section discussing my interests and background info -->
+
 	    <section class="intro">
+        <div class="flex-item">
         <h2 class="intro-heading">Hi! I'm Kevin Johnson</h2>
         <p class="denver">I am a software developer living in Denver, Colorado.</p>
         <p class="background">I have an athletic background having played some baseball in college, and I like to bring that same intensity to the code editor! </p>
-        <!-- <p class="skills">I specialize in front end web development! Some of the things i've learned in my studies include: html, css, and javascript. I also have experience working with api's, sass, testing with mocha/chai, jquery, & more!</p> -->
+        </div>
         </section>
+          </div>
+        </div>
         <hr>
         <!-- About section discussing more information about me and why I chose to study software engineering -->
          <section class="about">
+           <div class="wrapper">
            <h3 class="about-kev">About Kevin</h3>
+           <div class="flex-group">
+             <div class="flex-item-double">
            <p class="wife">After getting married to my beautiful wife, Zhibek, I decided that I wanted to focus on a different career path. One with the potential for growth and the potential to really make a difference in the world. I believe I can do these things with front end web development!</p>
            <p class="thinkful">As a student at Thinkful, I've started my journey to becoming a software developer and I couldn't be any happier!</p>
+           <img src="./images/t.png" alt="Thinkful logo" class="thinkful">
            <p class="hire">If you're looking to hire a new developer or collaborate on something, then please reach out! I am super excited to work with other devs to build great software!</p>
+           </div>
+           </div>
+           </div>
            </section>
            <hr>
+           <div class="wrapper">
+      <section class="portfolio">
+      <h2>Portfolio</h2>
+			<div class='flex-group'>
+				<div class='flex-item'>
+          <h3>Intention Timer</h3>
+          <img src="./images/intentiontimer.png" alt="Intention Timer Screenshot" class="intention-img">
+					<p> With this app you can: Select a category for which type of activity you would like to complete. After that you can enter your specific task including the time you would like to complete that task in, into the inputs below your selected category. Once all those fields are fulfilled you can click 'start activity'. That takes you to the timer section where you begin your countdown to complete the designated task (hopefully) within the alotted time!</p>
+          <p> Tech stack used: Created a custom counter in JS, Vanilla JS, HTML, CSS.</p>
+          <a href="https://github.com/KevDev90/Intention-Timer"target="_blank">Intention Timer</a>
+				</div>
+				<div class='flex-item'>
+          <h3>Foto Finder</h3>
+          <img src="./images/foto.png" alt="Foto Finder Screenshot" class="foto-img">
+					<p>With this app you can: Upload images with a URL link that will then store in your local storage. You can also search through them by caption or title. And you can also favorite and delete specific image cards with the click on the respective button.</p>
+          <p> Tech stack used: Vanilla JS, HTML, CSS, local storage.</p>
+          <a href="https://github.com/KevDev90/Foto-Finder"target="_blank">Foto Finder</a>
+				</div>
+			</div>
+      <div class='flex-group'>
+				<div class='flex-item'>
+          <h3>Which Beyonce</h3>
+          <img src="./images/b.png" alt="Which Beyonce Screenshot" class="foto-img">
+					<p>Which Beyoncé? is a two-player game that replicates Concentration. Each player takes turn flipping over all the cards until they find all 5 matches. The goal is to find all the matches in a faster amount of time than the opposing player.</p>
+          <p> Tech stack used: Vanilla JS, HTML, CSS, animations.</p>
+          <a href="https://github.com/KevDev90/Which-Beyonce"target="_blank">Which Beyonce</a>
+				</div>
+				<div class='flex-item'>
+          <h3>Refractor Tractor</h3>
+          <img src="./images/cookin.png" alt="Refractor Tractor Screenshot" class="foto-img">
+					<p>For Refractor Tractor my team and I took an existing project that a previous student built out (with hard coded data), and refactored it to take in data from an API. The app is essentially a recipe tracking application that allows users to view and favorite recipes.</p>
+          <p> Tech stack used: Testing with Spies, DOM Manipulation with jQuery, Retrieving all data from an endpoint (Fetch), Sass, Webpack, ES6 Classes.</p>
+          <a href="https://github.com/edlsto/refactor-tractor"target="_blank">Refractor Tractor</a>
+				</div>
+			</div>
+      </section>
            <!-- Contact section with links to my github and linkedIn profiles -->
              <section class="contact">
                <h3 class="contact-kev">Contact Kevin</h3>
+               <div class='flex-group'>
+                 <div class='flex-item'>
                <p class="hear">I'd love to hear from you! Please feel free to contact or follow me:</p>
+               </div>
+               <div class='flex-item'>
                <ol>
                  <li><a href="https://www.linkedin.com/in/kevin-johnson-bb609519a/"target="_blank">LinkedIn</a></li>
                  <li><a href="https://github.com/KevDev90"target="_blank">Github</a></li>
                  </ol>
+                 </div>
+                 </div>
               </section>
+              </div>
+
               <footer>Made by Kevin Johnson</footer>
     </body>
 </html>

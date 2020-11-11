@@ -1,3 +1,96 @@
 body {
   background-color: #f0ead6;
 }
+
+.wrapper {
+  width: 100%;
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  justify-content: center;
+}
+
+.flex-item-double {
+  flex: 2;
+  margin: 10px;
+  justify-content: center;
+}
+
+img {
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intention-img {
+  height: 400px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foto-img {
+  height: 400px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: grey;
+  margin-top: -50px;
+  padding-top: 4px;
+  margin-bottom: 50px;
+  height: 175px;
+  font-size: 30px;
+}
+
+.header, .intro, .about, .portfolio, .contact, footer {
+  text-align: center;
+}
+
+.about {
+  background-color: white;
+  margin-top: -22px;
+  margin-bottom: -5px;
+  font-size: 20px;
+}
+
+.about-kev {
+  padding-top: 50px;
+}
+
+.portfolio {
+  font-family: courier;
+  font-size: 20px;
+}
+
+.contact {
+  list-style-position: inside;
+  font-size: 25px;
+  background-color: white;
+  width: 100%
+}
+
+@media all and (min-width: 850px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
