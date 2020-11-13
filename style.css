@@ -25,8 +25,8 @@ body {
 
 img {
   background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -57,8 +57,39 @@ img {
   font-size: 30px;
 }
 
-.header, .intro, .about, .portfolio, .contact, footer {
+.header, .intro, .about, .portfolio, .contact, footer, #menu, h1 {
   text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: -65px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 200px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0px;
+  margin-left: 50%;
+}
+
+.intro {
+  font-size: 20px
 }
 
 .about {
@@ -81,7 +112,56 @@ img {
   list-style-position: inside;
   font-size: 25px;
   background-color: white;
-  width: 100%
+  width: 100vw;
+  margin-left: -17.5%;
+}
+
+.contact-kev {
+  margin-top: 150px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: #FF00F0;
+}
+
+a:active {
+  color: #0000F0;
+}
+
+header {
+  background-color: grey;;
+  /* margin-bottom: 40px; */
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.validate {
+  width:400px;
+  padding:40px;
+}
+
+.form-field {
+  margin-bottom: 40px;
+}
+
+form {
+  border: 2px solid red;
+  width: 50%;
+}
+
+#message-input {
+  height: 100px;
+}
+
+#menu {
+list-style-position: inside;
 }
 
 @media all and (min-width: 850px) {

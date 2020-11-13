@@ -7,12 +7,23 @@
   </head>
 	<body>
     <!-- header/nav with image below the section -->
-    <section class="header">
+    <header>
+		<h1>Kevin Johnson</h1>
+		<nav>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <!-- <section class="header">
 
       <h1> Kevin Johnson </h1>
       <p class="dev">Software Developer</p>
 
-      </section>
+      </section> -->
       <div class="wrapper">
         <div class="flex-group">
         <div class="flex-item">
@@ -90,9 +101,28 @@
                </div>
                <div class='flex-item'>
                <ol>
+                 <li><a href = "mailto: kevinj902302@gmail.com"target="_blank">Email</a></li>
                  <li><a href="https://www.linkedin.com/in/kevin-johnson-bb609519a/"target="_blank">LinkedIn</a></li>
                  <li><a href="https://github.com/KevDev90"target="_blank">Github</a></li>
                  </ol>
+                 <form method="post" action="https://formspree.io/kevinj902302@gmail.com" id="form" class="validate">
+                   <div class="form-field">
+                     <label for="full-name">Full Name</label>
+                     <input type="text" name="full-name" id="full-name" placeholder="Joe Bloggs" required />
+                   </div>
+                   <div class="form-field">
+                     <label for="email-input">Email</label>
+                     <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" required />
+                   </div>
+                   <div class="form-field">
+                     <label for="message-input">Message</label>
+                     <input type="" name="message-input" id="message-input" required />
+                   </div>
+                   <div class="form-field">
+                     <label for=""></label>
+                     <input type="submit" value="Send" />
+                   </div>
+                 </form>
                  </div>
                  </div>
               </section>
