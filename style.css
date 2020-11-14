@@ -1,5 +1,5 @@
 body {
-  background-color: #f0ead6;
+  background-color: white;
 }
 
 .wrapper {
@@ -25,11 +25,15 @@ body {
 
 img {
   background-repeat: no-repeat;
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.image {
+  margin-top: 20%;
 }
 
 .intention-img {
@@ -37,7 +41,10 @@ img {
   width: 300px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+}
+
+.intention, .beyonce {
+  margin-right: 10%;
 }
 
 .foto-img {
@@ -50,11 +57,12 @@ img {
 
 .header {
   background-color: grey;
-  margin-top: -50px;
+  margin-top: -40px;
   padding-top: 4px;
   margin-bottom: 50px;
   height: 175px;
   font-size: 30px;
+  width: 100vw;
 }
 
 .header, .intro, .about, .portfolio, .contact, footer, #menu, h1 {
@@ -89,23 +97,54 @@ li {
 }
 
 .intro {
-  font-size: 20px
+  font-size: 23px;
+  font-family: tahoma;
+  background-color: white;
+  margin-bottom: 1%;
+  margin-left: 8%;
+  padding-bottom: 5%;
+  text-align:left;
+}
+
+.intro-heading {
+  margin-top: 25%;
+  text-align: center;
+  font-size: 44px;
+}
+
+.background {
+  margin-bottom: 5%;
+
 }
 
 .about {
-  background-color: white;
+  background-color: #dcdcdc;
+  height: 100vh;
   margin-top: -22px;
   margin-bottom: -5px;
   font-size: 20px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  text-align:left;
 }
 
 .about-kev {
-  padding-top: 50px;
+  font-color: #2F4F4F;
+  padding-top: 5px;
+  font-size: 45px;
+  margin-bottom: -1%;
+  text-align: center;
 }
 
 .portfolio {
   font-family: courier;
   font-size: 20px;
+  margin-right: 5%;
+}
+
+.foto {
+  margin-left: 5%;
 }
 
 .contact {
@@ -114,10 +153,11 @@ li {
   background-color: white;
   width: 100vw;
   margin-left: -17.5%;
+  margin-top: -2%;
 }
 
 .contact-kev {
-  margin-top: 150px;
+  margin-top: 4%;
 }
 
 a:link {
@@ -133,7 +173,7 @@ a:active {
 }
 
 header {
-  background-color: grey;;
+  background-color: #78866B;
   /* margin-bottom: 40px; */
   font-size: 32px;
   text-align: center;
@@ -152,8 +192,26 @@ header {
 }
 
 form {
-  border: 2px solid red;
-  width: 50%;
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+footer {
+  margin-top: 1%;
 }
 
 #message-input {
@@ -164,13 +222,41 @@ form {
 list-style-position: inside;
 }
 
+#about-menu, #contact-menu, #portfolio-menu {
+  list-style-position: inside;
+  margin-right: 65%;
+}
+
+.portfolio-title {
+  font-size: 44px;
+}
+
+.hidden {
+  display: none;
+}
+
 @media all and (min-width: 850px) {
   .wrapper {
     width: 75%;
     margin: auto;
   }
 
-  .group {
+  .flex-group {
     flex-direction: row;
   }
+}
+
+.contact {
+  flex-direction: row;
+  background-color: #dcdcdc;
+}
+
+.contact-links{
+  margin-right: 65%;
+}
+
+iframe {
+  margin-left: 5%;
+  width: 55%;
+  height: 60vh;
 }
