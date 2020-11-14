@@ -55,6 +55,8 @@ img {
   margin-right: auto;
 }
 
+/* ------ header  ------ */
+
 .header {
   background-color: grey;
   margin-top: -40px;
@@ -63,6 +65,16 @@ img {
   height: 175px;
   font-size: 30px;
   width: 100vw;
+}
+
+header {
+  background-color: #78866B;
+  /* margin-bottom: 40px; */
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  list-style: none;
 }
 
 .header, .intro, .about, .portfolio, .contact, footer, #menu, h1 {
@@ -82,20 +94,13 @@ ul {
   justify-content: space-between;
 }
 
-ol {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 200px;
-}
-
 li {
   display: flex;
   justify-content: space-between;
   margin-right: 0px;
   margin-left: 50%;
 }
-
+/* ------ home page  ------ */
 .intro {
   font-size: 23px;
   font-family: tahoma;
@@ -116,7 +121,7 @@ li {
   margin-bottom: 5%;
 
 }
-
+/* ------ about page  ------ */
 .about {
   background-color: #dcdcdc;
   height: 100vh;
@@ -137,15 +142,23 @@ li {
   text-align: center;
 }
 
+/* ------ portfolio page  ------ */
+
 .portfolio {
   font-family: courier;
   font-size: 20px;
   margin-right: 5%;
 }
 
+.portfolio-title {
+  font-size: 44px;
+}
+
 .foto {
   margin-left: 5%;
 }
+
+/* ------ contact page  ------ */
 
 .contact {
   list-style-position: inside;
@@ -158,28 +171,6 @@ li {
 
 .contact-kev {
   margin-top: 4%;
-}
-
-a:link {
-  color: blue;
-}
-
-a:hover {
-  color: #FF00F0;
-}
-
-a:active {
-  color: #0000F0;
-}
-
-header {
-  background-color: #78866B;
-  /* margin-bottom: 40px; */
-  font-size: 32px;
-  text-align: center;
-  margin: 0;
-  padding-top: 5px;
-  list-style: none;
 }
 
 .validate {
@@ -214,6 +205,22 @@ footer {
   margin-top: 1%;
 }
 
+/* ------ pseudo classes  ------ */
+
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: #FF00F0;
+}
+
+a:active {
+  color: #0000F0;
+}
+
+/* ------ menus  ------ */
+
 #message-input {
   height: 100px;
 }
@@ -227,13 +234,13 @@ list-style-position: inside;
   margin-right: 65%;
 }
 
-.portfolio-title {
-  font-size: 44px;
-}
+/* ------ hides page  ------ */
 
 .hidden {
   display: none;
 }
+
+/* ------ media queries  ------ */
 
 @media all and (min-width: 850px) {
   .wrapper {

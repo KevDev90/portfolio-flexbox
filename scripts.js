@@ -1,3 +1,4 @@
+// variables that select links
 const homeLink = document.querySelector('.home-link');
 const aboutLink = document.querySelector('.about-link');
 const portfolioLink = document.querySelector('.portfolio-link');
@@ -18,7 +19,7 @@ const home = document.querySelector('.home-page');
 const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
 const contact = document.querySelector('.contact');
-
+// event listeners
 homeLink.addEventListener('click', switchToHome)
 aboutLink.addEventListener('click', switchToAbout)
 portfolioLink.addEventListener('click', switchToPortfolio)
@@ -35,7 +36,7 @@ homeLink4.addEventListener('click', switchToHome)
 aboutLink4.addEventListener('click', switchToAbout)
 portfolioLink4.addEventListener('click', switchToPortfolio)
 contactLink4.addEventListener('click', switchToContact)
-
+// functions to switch pages
 function switchToHome() {
   portfolio.classList.add('hidden');
   contact.classList.add('hidden');
