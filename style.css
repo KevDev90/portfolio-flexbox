@@ -235,6 +235,10 @@ align-items: center;
 text-align: center;
 }
 
+#about-menu {
+  margin-bottom: -11%;
+}
+
 #menu, #about-menu, #contact-menu, #portfolio-menu {
 list-style-position: inside;
 width: 10%;
