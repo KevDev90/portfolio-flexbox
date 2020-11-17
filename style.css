@@ -203,6 +203,9 @@ form textarea {
 
 footer {
   margin-top: 1%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 /* ------ pseudo classes  ------ */
@@ -227,11 +230,16 @@ a:active {
 
 #menu {
 list-style-position: inside;
+width: 10%;
+align-items: center;
+text-align: center;
 }
 
-#about-menu, #contact-menu, #portfolio-menu {
-  list-style-position: inside;
-  margin-right: 65%;
+#menu, #about-menu, #contact-menu, #portfolio-menu {
+list-style-position: inside;
+width: 10%;
+align-items: center;
+text-align: center;
 }
 
 /* ------ hides page  ------ */
