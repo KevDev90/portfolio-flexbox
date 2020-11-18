@@ -26,7 +26,8 @@ body {
 img {
   background-repeat: no-repeat;
   height: 400px;
-  width: 400px;
+  width: 100%;
+  object-fit: contain;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -49,7 +50,8 @@ img {
 
 .foto-img {
   height: 400px;
-  width: 500px;
+  width: 100%;
+  object-fit: contain;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +108,7 @@ li {
   font-family: tahoma;
   background-color: white;
   margin-bottom: 1%;
-  margin-left: 8%;
+  margin-left: 3%;
   padding-bottom: 5%;
   text-align:left;
 }
@@ -124,9 +126,6 @@ li {
 /* ------ about page  ------ */
 .about {
   background-color: #dcdcdc;
-  height: 100vh;
-  margin-top: -22px;
-  margin-bottom: -5px;
   font-size: 20px;
   font-family: sans-serif;
   display: flex;
@@ -164,8 +163,6 @@ li {
   list-style-position: inside;
   font-size: 25px;
   background-color: white;
-  width: 100vw;
-  margin-left: -17.5%;
   margin-top: -2%;
 }
 
@@ -174,7 +171,7 @@ li {
 }
 
 .validate {
-  width:400px;
+  max-width:400px;
   padding:40px;
 }
 
@@ -184,7 +181,6 @@ li {
 
 form {
   padding-right: 8px;
-  /* Fixed small sizing issue on the right */
 }
 
 form label {
@@ -235,34 +231,11 @@ align-items: center;
 text-align: center;
 }
 
-#about-menu {
-  margin-bottom: -11%;
-}
-
 #menu, #about-menu, #contact-menu, #portfolio-menu {
 list-style-position: inside;
 width: 10%;
 align-items: center;
 text-align: center;
-}
-
-/* ------ hides page  ------ */
-
-.hidden {
-  display: none;
-}
-
-/* ------ media queries  ------ */
-
-@media all and (min-width: 850px) {
-  .wrapper {
-    width: 75%;
-    margin: auto;
-  }
-
-  .flex-group {
-    flex-direction: row;
-  }
 }
 
 .contact {
@@ -278,4 +251,40 @@ iframe {
   margin-left: 5%;
   width: 55%;
   height: 60vh;
+}
+
+/* ------ hides page  ------ */
+
+.hidden {
+  display: none;
+}
+
+/* ------ media queries  ------ */
+
+@media all and (min-width: 950px) {
+  .wrapper {
+    width: 75%;
+    margin: auto;
+  }
+
+  .flex-group{
+    flex-direction: row;
+  }
+
+  .image {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  li {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    font-size: 20px;
+  }
 }
